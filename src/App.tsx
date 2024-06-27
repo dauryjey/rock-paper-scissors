@@ -1,34 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div id="app-container">
+      <header className="p-4">
+        <div className="flex justify-between gap-8 border-4 rounded-lg border-[hsl(217,16%,45%)] px-4 py-2">
+          <div className="flex flex-col justify-center p-2 leading-none">
+            <span className="font-bold">ROCK</span>
+            <span className="font-bold">PAPER</span>
+            <span className="font-bold">SCISSORS</span>
+          </div>
+          <div className="flex justify-center items-center flex-col bg-indigo-100 py-3 px-6 rounded-md">
+            <p className="font-medium text-xs tracking-wider text-[hsl(229,64%,46%)]">
+              SCORE
+            </p>
+            <p className="font-bold text-4xl text-[hsl(229,25%,31%)]">0</p>
+          </div>
+        </div>
+      </header>
+      <main></main>
+      <footer>
+        <input type="button" value="RULES" />
+      </footer>
+    </div>
   )
 }
 
