@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+## The challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Your challenge is to build out this Rock, Paper, Scissors game and get it looking as close to the design as possible.
 
-Currently, two official plugins are available:
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Your users should be able to:
 
-## Expanding the ESLint configuration
+- View the optimal layout for the game depending on their device's screen size
+- Play Rock, Paper, Scissors against the computer
+- **Bonus**: Maintain the state of the score after refreshing the browser
+- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Rules
 
-- Configure the top-level `parserOptions` property like this:
+If the player wins, they gain 1 point. If the computer wins, the player loses one point.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+#### Original
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Paper beats Rock
+- Rock beats Scissors
+- Scissors beats Paper
+
+#### Bonus
+
+- Scissors beats Paper
+- Paper beats Rock
+- Rock beats Lizard
+- Lizard beats Spock
+- Spock beats Scissors
+- Scissors beats Lizard
+- Paper beats Spock
+- Rock beats Scissors
+- Lizard beats Paper
+- Spock beats Rock
