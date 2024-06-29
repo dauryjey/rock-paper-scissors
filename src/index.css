@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --header-outline: hsl(217, 16%, 45%);
+  --score-text: hsl(229, 25%, 31%);
+  --dark-text: hsl(229, 64%, 46%);
+  --gradient-from-bg: hsl(214, 47%, 23%);
+  --gradient-to-bg: hsl(237, 49%, 15%);
+}
+
 #app-container {
-  @apply flex justify-center items-center flex-col text-white bg-gradient-to-b from-[hsl(214,47%,23%)] to-[hsl(237,49%,15%)] h-screen;
+  @apply flex justify-center items-center flex-col text-white bg-gradient-to-b from-[var(--gradient-from-bg)] to-[var(--gradient-to-bg)] h-screen;
 }
